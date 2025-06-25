@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Scroll Progress -->
+  <div id="progress-bar"></div>
+  
+  <!-- Banner & Navbar -->
+  <header class="banner">
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-list">
+        <li><a href="#about" class="nav-link">Giới thiệu<span class="underline"></span></a></li>
+        <li><a href="#career" class="nav-link">Mục tiêu<span class="underline"></span></a></li>
+        <li><a href="#hobbies" class="nav-link">Sở thích<span class="underline"></span></a></li>
+        <li><a href="#skills" class="nav-link">Kỹ năng<span class="underline"></span></a></li>
+        <li><a href="#projects" class="nav-link">Dự án<span class="underline"></span></a></li>
+        <li><a href="#contact" class="nav-link">Liên hệ<span class="underline"></span></a></li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+    <div class="banner-content" data-parallax="0.5">
+      <div class="overlay"></div>
+      <img src="quang.jpg" alt="Ảnh cá nhân" class="avatar">
+      <h1 class="glitch" data-text="Vũ Minh Quang">Vũ Minh Quang</h1>
+      <p class="typewriter">Sinh viên CNTT & Web Developer</p>
+    </div>
+    <!-- Animated Background Bubbles -->
+    <div class="bubbles">
+      <span style="--i:1;"></span><span style="--i:2;"></span><span style="--i:3;"></span><span style="--i:4;"></span><span style="--i:5;"></span>
+      <span style="--i:6;"></span><span style="--i:7;"></span><span style="--i:8;"></span><span style="--i:9;"></span><span style="--i:10;"></span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="about" class="section about" data-tilt>
+      <h2>Thông tin cá nhân</h2>
+      <p>Họ và tên:Vũ Minh Quang</p>
+      <p>Ngày sinh: 15/04/2005</p>
+      <p>Email: quangsimeon551@gmail.com</p>
+    </section>
+
+    <section id="career" class="section career" data-tilt>
+      <h2>Mục tiêu nghề nghiệp</h2>
+      <p>Trở thành Front‑end Developer chuyên nghiệp, xây dựng các ứng dụng web tương tác cao.</p>
+    </section>
+
+    <section id="hobbies" class="section hobbies">
+      <h2>Sở thích</h2>
+      <ul>
+        <li class="hobby-item" data-tilt>Lập trình Web</li>
+        <li class="hobby-item" data-tilt>Đọc sách khoa học viễn tưởng</li>
+        <li class="hobby-item" data-tilt>Chạy bộ</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section skills">
+      <h2>Ngôn ngữ & Kỹ năng</h2>
+      <div class="skill-bar" data-skill="HTML & CSS"><span></span></div>
+      <div class="skill-bar" data-skill="JavaScript"><span></span></div>
+      <div class="skill-bar" data-skill="React"><span></span></div>
+      <div class="skill-bar" data-skill="Git"><span></span></div>
+    </section>
+
+    <section id="certs" class="section certs" data-tilt>
+      <h2>Chứng chỉ - Giải thưởng</h2>
+      <p>Không có</p>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2>Dự án</h2>
+      <div class="project-list">
+        <div class="project-item" data-tilt>
+          <h3>Web Portfolio</h3>
+          <p>Thiết kế và phát triển trang portfolio cá nhân với HTML, CSS, JS.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" data-tilt>
+      <h2>Liên hệ</h2>
+      <ul>
+        <li><a href="https://github.com/username" target="_blank">GitHub</a></li>
+        <li><a href="https://facebook.com/username" target="_blank">Facebook</a></li>
+        <li><a href="https://instagram.com/username" target="_blank">Instagram</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

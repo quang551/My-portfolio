@@ -1,0 +1,5 @@
+/* script.js */
+window.addEventListener('scroll', () => { const total = document.documentElement.scrollHeight - document.documentElement.clientHeight; const progress = (window.scrollY / total) * 100; document.getElementById('progress-bar').style.width = progress + '%'; });
+const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('show'); if (entry.target.classList.contains('skill-bar')) { const span = entry.target.querySelector('span'); span.style.width = '80%'; } if (entry.target.classList.contains('hobby-item')) entry.target.classList.add('show'); } }); }, { threshold: 0.3 });
+document.querySelectorAll('.section, .hobby-item, .skill-bar').forEach(el => observer.observe(el));
+VanillaTilt.init(document.querySelectorAll('[data-tilt]'), { max: 20, speed: 500, glare: true, 'max-glare': 0.4 });
