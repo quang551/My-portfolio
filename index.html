@@ -1,103 +1,168 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <!-- Link CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;500&family=Roboto:wght@400;300&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
 </head>
-<body>
-  <!-- Scroll Progress -->
-  <div id="progress-bar"></div>
-  
-  <!-- Banner & Navbar -->
-  <header class="banner">
+<body id="top">
+  <!-- Header: Banner + Navbar -->
+  <header class="header">
     <nav class="navbar">
-      <div class="logo">MyPortfolio</div>
-      <ul class="nav-list">
-        <li><a href="#about" class="nav-link">Giới thiệu<span class="underline"></span></a></li>
-        <li><a href="#career" class="nav-link">Mục tiêu<span class="underline"></span></a></li>
-        <li><a href="#hobbies" class="nav-link">Sở thích<span class="underline"></span></a></li>
-        <li><a href="#skills" class="nav-link">Kỹ năng<span class="underline"></span></a></li>
-        <li><a href="#projects" class="nav-link">Dự án<span class="underline"></span></a></li>
-        <li><a href="#contact" class="nav-link">Liên hệ<span class="underline"></span></a></li>
+      <a href="#about" class="nav__logo">MYPORTFOLIO</a>
+      <ul class="nav__list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
-      <div class="hamburger"><span></span><span></span><span></span></div>
     </nav>
-    <div class="banner-content" data-parallax="0.5">
-      <div class="overlay"></div>
-      <img src="quang.jpg" alt="Ảnh cá nhân" class="avatar">
-      <h1 class="glitch" data-text="Vũ Minh Quang">Vũ Minh Quang</h1>
-      <p class="typewriter">Sinh viên CNTT & Web Developer</p>
-    </div>
-    <!-- Animated Background Bubbles -->
-    <div class="bubbles">
-      <span style="--i:1;"></span><span style="--i:2;"></span><span style="--i:3;"></span><span style="--i:4;"></span><span style="--i:5;"></span>
-      <span style="--i:6;"></span><span style="--i:7;"></span><span style="--i:8;"></span><span style="--i:9;"></span><span style="--i:10;"></span>
+    <div class="banner">
+      <div class="blob-bg"></div>
+      <h1 class="typewriter">Xin chào, mình là Vũ Minh Quang</h1>
+      <p class="banner-sub animate-on-scroll">Front-end Developer & UI/UX Enthusiast</p>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <section id="about" class="section about" data-tilt>
-      <h2>Thông tin cá nhân</h2>
-      <p>Họ và tên:Vũ Minh Quang</p>
-      <p>Ngày sinh: 15/04/2005</p>
-      <p>Email: quangsimeon551@gmail.com</p>
-    </section>
+  <!-- About -->
+  <section id="about" class="section grid two-column animate-on-scroll">
+    <div class="avatar floating">
+      <img src="quang.jpg" alt="Ảnh cá nhân" />
+    </div>
+    <div class="info">
+      <h2 class="tilt-text">Giới thiệu</h2>
+      <p>Xin chào! Mình là Quang, sinh viên năm hai ngành Công nghệ Thông tin tại Trường Đại Học GTVT TPHCM. Mình yêu thích lập trình và thích khám phá cách công nghệ có thể giải quyết vấn đề trong cuộc sống. Mình đã tham gia một vài dự án nhỏ về web và app, chủ yếu dùng JavaScript, Python, React và Node.js. Mình luôn tò mò, thích học cái mới và mong muốn tạo ra những sản phẩm hữu ích, có giá trị thực tế. Rất vui nếu bạn muốn xem qua các dự án mình đã làm hoặc kết nối cùng mình!</p>
+      <h3>Mục tiêu nghề nghiệp</h3>
+      <p> Mình muốn trau dồi kỹ năng về web và app, đặc biệt với React, Node.js và Python. Mình thích tham gia các dự án thực tế, học hỏi từ trải nghiệm và đóng góp vào những sản phẩm hữu ích, sáng tạo và có giá trị cho cộng đồng.</p>
+    </div>
+  </section>
 
-    <section id="career" class="section career" data-tilt>
-      <h2>Mục tiêu nghề nghiệp</h2>
-      <p>Trở thành Front‑end Developer chuyên nghiệp, xây dựng các ứng dụng web tương tác cao.</p>
-    </section>
+  <!-- Skills -->
+  <section id="skills" class="section animate-on-scroll">
+    <h2 class="section-title tilt-text">Kỹ năng</h2>
+    <div class="skills-grid">
+      <div class="skill card-3d">
+        <h4>HTML/CSS</h4>
+        <div class="bar"><div data-width="90%"></div></div>
+      </div>
+      <div class="skill card-3d">
+        <h4>JavaScript</h4>
+        <div class="bar"><div data-width="85%"></div></div>
+      </div>
+      <div class="skill card-3d">
+        <h4>React</h4>
+        <div class="bar"><div data-width="75%"></div></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="hobbies" class="section hobbies">
-      <h2>Sở thích</h2>
-      <ul>
-        <li class="hobby-item" data-tilt>Lập trình Web</li>
-        <li class="hobby-item" data-tilt>Đọc sách khoa học viễn tưởng</li>
-        <li class="hobby-item" data-tilt>Chạy bộ</li>
-      </ul>
-    </section>
+  <!-- Hobbies -->
+  <section id="hobbies" class="section hobbies animate-on-scroll">
+    <h2 class="section-title tilt-text">Sở thích</h2>
+    <div class="hobbies-grid">
+      <div class="hobby card-3d" data-hobby="music">
+        <i class="fas fa-music"></i>
+        <p>Âm nhạc</p>
+      </div>
+      <div class="hobby card-3d" data-hobby="travel">
+        <i class="fas fa-plane"></i>
+        <p>Du lịch</p>
+      </div>
+      <div class="hobby card-3d" data-hobby="gaming">
+        <i class="fas fa-gamepad"></i>
+        <p>Game</p>
+      </div>
+    </div>
 
-    <section id="skills" class="section skills">
-      <h2>Ngôn ngữ & Kỹ năng</h2>
-      <div class="skill-bar" data-skill="HTML & CSS"><span></span></div>
-      <div class="skill-bar" data-skill="JavaScript"><span></span></div>
-      <div class="skill-bar" data-skill="React"><span></span></div>
-      <div class="skill-bar" data-skill="Git"><span></span></div>
-    </section>
+    <!-- Hobby Details Panels -->
+    <div class="hobby-details">
+      <!-- Music -->
+      <div class="detail" id="music" data-current="0">
+        <button class="arrow arrow-left"><i class="fas fa-chevron-left"></i></button>
+        <img src="hq.jpg" alt="Âm nhạc 1" class="carousel-image active" />
+        <img src="ct.jpg" alt="Âm nhạc 2" class="carousel-image" />
+        <img src="kđnr.jpg" alt="Âm nhạc 3" class="carousel-image" />
+        <h3>Âm nhạc</h3>
+        <p>Mình là một người thích nghe nhiều thể loại nhạc đặc biệt là ballad.</p>
+        <button class="arrow arrow-right"><i class="fas fa-chevron-right"></i></button>
+      </div>
 
-    <section id="certs" class="section certs" data-tilt>
-      <h2>Chứng chỉ - Giải thưởng</h2>
-      <p>Không có</p>
-    </section>
+      <!-- Reading -->
+      <div class="detail" id="travel" data-current="0">
+        <button class="arrow arrow-left"><i class="fas fa-chevron-left"></i></button>
+        <img src="dalas.jpg" alt="Du lịch $1" class="carousel-image active" />
+        <img src="nhatr.jpg" alt="Du lịch 2" class="carousel-image" />
+        <img src="sm.jpg" alt="Du lịch 3" class="carousel-image" />
+        <h3>Du lịch</h3>
+        <p>Mình rất thích đi phượt nên không thể thiếu những tấm ảnh đẹp này.</p>
+        <button class="arrow arrow-right"><i class="fas fa-chevron-right"></i></button>
+      </div>
 
-    <section id="projects" class="section projects">
-      <h2>Dự án</h2>
-      <div class="project-list">
-        <div class="project-item" data-tilt>
-          <a href="https://quang551.github.io/Memory-Match_Game/" target="_blank" class="project-item" data-tilt>
-          <h3>Memory Match Game</h3>
-          <p>Trò chơi ghép thẻ sử dụng JavaScript, HTML5, CSS3.</p>
-        </a>
+      <!-- Gaming -->
+      <div class="detail" id="gaming" data-current="0">
+        <button class="arrow arrow-left"><i class="fas fa-chevron-left"></i></button>
+        <img src="lol.png" alt="Game 1" class="carousel-image active" />
+        <img src="vlr.jpg" alt="Game 2" class="carousel-image" />
+        <img src="pubg.png" alt="Game 3" class="carousel-image" />
+        <h3>Game</h3>
+        <p>Thời gian rảnh mình thường chơi những game này cùng với bạn bè hoặc người thân.</p>
+        <button class="arrow arrow-right"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects animate-on-scroll">
+    <h2 class="section-title glitch-title" data-text="Dự án">Dự án</h2>
+    <div class="projects-grid">
+      <div class="project card-tilt shadow-spin">
+        <img src="mine.png" alt="Project 1" />
+        <div class="proj-info">
+          <h3>Dò mìn</h3>
+          <p>HTML, CSS, JS</p>
+          <a href="https://quang551.github.io/Mine/" target="_blank" class="btn liquid">Xem chi tiết</a>
         </div>
       </div>
-    </section>
+      <div class="project card-tilt shadow-spin">
+        <img src="snake.png" alt="Project 2" />
+        <div class="proj-info">
+          <h3>Rắn ăn mồi</h3>
+          <p>HTML, CSS, JS</p>
+          <a href="https://quang551.github.io/Snake/" target="_blank" class="btn liquid">Xem chi tiết</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="section contact" data-tilt>
-      <h2>Liên hệ</h2>
-      <ul>
-        <li><a href="https://github.com/username" target="_blank">GitHub</a></li>
-        <li><a href="https://facebook.com/username" target="_blank">Facebook</a></li>
-        <li><a href="https://instagram.com/username" target="_blank">Instagram</a></li>
-      </ul>
-    </section>
-  </main>
+  <!-- Footer -->
+  <footer class="footer animate-on-scroll">
+    <div class="footer-content">
+      <p>&copy; 2025 Vũ Minh Quang.</p>
+      <p><i class="fas fa-envelope"></i> quangsimeon551@gmail.com</p>
+      <p><i class="fas fa-phone"></i> 0327 534 655</p>
+    </div>
+    <div class="footer-icons">
+      <a href="https://github.com/quang551" target="_blank" class="footer-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/wuangzu15/" target="_blank" class="footer-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/quangzu1504/" target="_blank" class="footer-icon">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <!-- Back to Top Button -->
+  <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
   <script src="script.js"></script>
 </body>
 </html>
